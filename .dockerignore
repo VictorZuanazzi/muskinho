@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+*.swp
+.env
+.venv/
+.git
+.gitignore
+logs/
+terminals/
+*.log
+*.sqlite
+*.db
