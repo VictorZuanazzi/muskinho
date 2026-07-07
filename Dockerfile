@@ -21,4 +21,4 @@ ENV PORT=5001 \
 EXPOSE 5001
 
 # Use callable syntax for the factory instead of --factory (not available here).
-CMD ["sh", "-c", "gunicorn --bind 0.0.0.0:${PORT:-5001} --workers ${WORKERS:-2} --timeout ${TIMEOUT:-120} 'app:create_app()'"]
+CMD ["uvicorn","main:app","--host","0.0.0.0","--port","8080","--workers","2"]
